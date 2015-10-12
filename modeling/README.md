@@ -29,5 +29,6 @@ To rotate part of the model create a component out of the surfaces you want to r
 ### Setup to export
 1. Enable shadows, `menu > view > shadows`
 1. Open the shadow, styles, and scene window, `menu > view > shadows,styles,scenes`
-windturbine1
-rrr
+
+
+

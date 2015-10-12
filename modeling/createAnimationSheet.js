@@ -9,7 +9,7 @@ var processRawImages = function(){
 	var frameNames = _.times(config.rows * config.cols, function(n){
 		return config.name + (n + 1);
 	});
-	console.log('\nproccessing', frameNames);
+	//console.log('\nproccessing', frameNames);
 
 	async.map(frameNames, processImage, function(){
 		createSpriteSheet(config.name, config.rows, config.cols);
@@ -41,6 +41,7 @@ var processImage = function(frameName, callback){
 							.in(tempName)
 							.write(tempName, function(err){
 								if(err) console.log('err', err);
+								console.log('Finished ', frameName);
 								cb()
 							});
 					});
@@ -73,6 +74,9 @@ var createSpriteSheet = function(imgName, row, col){
 		.in('-geometry')
 		.in('x' + config.resize.height)
 
+		.in("-background")
+		.in('none')
+
 	_.times(col*row, function(num){
 		cmd = cmd.in('./' + config.name + '/temp/' + imgName + (num + 1) + '.png')
 	})
@@ -95,10 +99,7 @@ if(process.argv.length > 2){
 
 console.log('config', config);
 
-processRawImages();
+//processRawImages();
 
-/*
-processImage('windturbine3', function(){
-	console.log('done');
-})
-*/
+
+createSpriteSheet(config.name, config.rows, config.cols);

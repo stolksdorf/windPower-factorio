@@ -7,7 +7,7 @@
 !y::
 	MsgBox, running
 	Sleep, 1000
-	Loop, 6
+	Loop, 36
 	{
 		SelectRotateScene()
 		RotateModel()
@@ -45,7 +45,7 @@ RotateModel(){
 	MouseClick, left, 1000, 460 ;;Draw out arm
 	MouseMove, 1000, 550
 	Sleep, 500
-	Send, 15{Enter} ;; Enter in degrees
+	Send, 10{Enter} ;; Enter in degrees
 	Sleep, 500
 	MouseClick, left, 35, 70 ;;Select pointer tool
 }

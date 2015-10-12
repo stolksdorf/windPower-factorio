@@ -1,15 +1,15 @@
 {
 	"name" : "windturbine",
-	"rows" : 2,
-	"cols" : 3,
+	"rows" : 6,
+	"cols" : 6,
 	"crop" : {
-		"x" : 1380,
-		"y" : 400,
-		"width" : 2800,
-		"height" : 2050
+		"x" : 621,
+		"y" : 81,
+		"width" : 3288,
+		"height" : 2344
 	},
 	"resize" : {
 		"width" : null,
-		"height" : 250
+		"height" : 200
 	}
 }
