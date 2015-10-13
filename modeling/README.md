@@ -31,4 +31,15 @@ To rotate part of the model create a component out of the surfaces you want to r
 1. Open the shadow, styles, and scene window, `menu > view > shadows,styles,scenes`
 
 
+### How To Setup the automated exporting
+1. Make sure you have the Sketchup windows aligned along the side
+1. Center your model properly and save that to the Money Shot frame
+1. Do one export to set up the pathing properly. **important**: set the export options each time, make the width 5000px and make the height match
+
+1. Clean out the /raw for your model, then run the script
+
+1. Open up one of the raw images in Paint.net to find the crop coordinates, and add those to the `sheet_config.json`
+1.
+
+
 

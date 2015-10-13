@@ -7,7 +7,7 @@
 !y::
 	MsgBox, running
 	Sleep, 1000
-	Loop, 36
+	Loop, 40
 	{
 		SelectRotateScene()
 		RotateModel()
@@ -45,7 +45,7 @@ RotateModel(){
 	MouseClick, left, 1000, 460 ;;Draw out arm
 	MouseMove, 1000, 550
 	Sleep, 500
-	Send, 10{Enter} ;; Enter in degrees
+	Send, 3{Enter} ;; Enter in degrees
 	Sleep, 500
 	MouseClick, left, 35, 70 ;;Select pointer tool
 }
@@ -54,7 +54,7 @@ ExportImage(frameNum){
 	Send, ^e
 	Sleep, 500
 	Send, windturbine%frameNum%{enter}
-	Sleep, 8000
+	Sleep, 6000
 	FocusSketchUp()
 }
 
@@ -65,7 +65,7 @@ ExportNoShadow(frameNum){
 	Send, ^e
 	Sleep, 500
 	Send, windturbine%frameNum%_noshadow{enter}
-	Sleep, 8000
+	Sleep, 6000
 	MouseClick, left, 1276, 379 ;;Turn on ground shadows
 	FocusSketchUp()
 }

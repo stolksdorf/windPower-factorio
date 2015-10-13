@@ -88,7 +88,6 @@ var createSpriteSheet = function(imgName, row, col){
 
 /////////////////////////////
 
-
 var config = {};
 if(process.argv.length > 2){
 	console.log();
@@ -96,10 +95,18 @@ if(process.argv.length > 2){
 }else{
 	console.log('You must pass in a sheet config json');
 }
-
 console.log('config', config);
 
-//processRawImages();
+
+if(process.argv.length > 3){
+	if(process.argv[3] == 'sheet'){
+		return createSpriteSheet(config.name, config.rows, config.cols);
+	}
+}
 
 
-createSpriteSheet(config.name, config.rows, config.cols);
+
+processRawImages();
+
+
+//
