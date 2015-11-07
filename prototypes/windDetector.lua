@@ -73,7 +73,6 @@ data:extend({
 
 
 	--Wind icons for circuit network
-
 	{
 		type = "item-subgroup",
 		name = "virtual-signal-info",

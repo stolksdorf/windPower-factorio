@@ -100,7 +100,7 @@ data:extend({
 			match_speed_to_activity = true,
 		},
 		min_perceived_performance = 0.25,
-		performance_to_sound_speedup = 0.15
+		performance_to_sound_speedup = 0.15,
 	},
 
 })

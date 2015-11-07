@@ -7,6 +7,7 @@ local WindPowerMod = Mod.register("WindPowerMod")
 
 --Entities
 WindPowerMod.addSchematic(require "windTurbine.schematic")
+WindPowerMod.addSchematic(require "windDetector.schematic")
 
 
 

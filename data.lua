@@ -40,6 +40,7 @@ data:extend({
 
 
 require("windTurbine.prototype")
+require("windDetector.prototype")
 
 --require("prototypes.windDetector")
 --require("prototypes.windTurbine")
